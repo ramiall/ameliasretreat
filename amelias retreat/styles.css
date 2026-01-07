@@ -94,19 +94,29 @@ body {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        padding: 15px 0;
+    }
+    
+    .nav-container {
+        padding: 0 20px;
+    }
+    
     .nav-links {
         position: fixed;
-        top: 70px;
+        top: 60px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 60px);
         background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
         padding-top: 50px;
         gap: 30px;
         transition: left 0.3s ease;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
     
     .nav-links.active {
@@ -115,6 +125,13 @@ body {
     
     .nav-links a {
         font-size: 18px;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .menu-toggle {
+        display: flex;
     }
 }
 
@@ -200,6 +217,20 @@ body {
     background-repeat: no-repeat;
     opacity: 0.6;
     z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .hero-content::before {
+        width: 150%;
+        height: 85%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content::before {
+        width: 140%;
+        height: 80%;
+    }
 }
 
 .hero-tagline {
@@ -319,68 +350,114 @@ body {
 }
 
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-    
-    .menu-toggle {
-        display: flex;
-    }
-    
-    .nav-container {
-        padding: 0 20px;
-    }
-    
     .hero {
-        padding: 80px 20px 40px;
+        padding: 70px 20px 50px;
+        min-height: 90vh;
+    }
+    
+    .hero::before {
+        background-attachment: scroll; /* Better performance on mobile */
+    }
+    
+    .hero-content {
+        padding: 30px 15px;
     }
     
     .main-brand {
-        font-size: 70px;
+        font-size: 64px;
+        letter-spacing: 3px;
     }
     
     .hero-tagline {
         font-size: 22px;
+        margin-bottom: 25px;
+        letter-spacing: 1.5px;
     }
     
     .brand-name {
-        gap: 10px;
+        gap: 12px;
+        margin-bottom: 50px;
     }
     
     .est, .year {
         font-size: 14px;
+        letter-spacing: 1.5px;
     }
     
     .brand-icons {
-        gap: 30px;
+        gap: 35px;
         flex-direction: column;
+        margin-top: 50px;
     }
     
     .icon-item span {
-        font-size: 12px;
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+    
+    .welcome-section {
+        padding: 80px 30px;
     }
     
     .welcome-title {
-        font-size: 36px;
+        font-size: 38px;
+        margin-bottom: 35px;
     }
     
     .welcome-text {
         font-size: 14px;
+        line-height: 1.9;
+        letter-spacing: 0.5px;
     }
 }
 
 @media (max-width: 480px) {
+    .navbar {
+        padding: 12px 0;
+    }
+    
+    .nav-container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 60px 15px 40px;
+        min-height: 85vh;
+    }
+    
+    .hero-content {
+        padding: 25px 10px;
+    }
+    
     .main-brand {
-        font-size: 50px;
+        font-size: 48px;
+        letter-spacing: 2px;
     }
     
     .hero-tagline {
-        font-size: 18px;
-        margin-bottom: 20px;
+        font-size: 20px;
+        margin-bottom: 25px;
+        letter-spacing: 1px;
     }
     
     .brand-name {
-        margin-bottom: 30px;
+        gap: 8px;
+        margin-bottom: 40px;
+    }
+    
+    .est, .year {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    
+    .brand-icons {
+        gap: 30px;
+        margin-top: 40px;
+    }
+    
+    .icon-item span {
+        font-size: 12px;
+        letter-spacing: 1px;
     }
     
     .welcome-section {
@@ -388,8 +465,31 @@ body {
     }
     
     .welcome-title {
-        font-size: 28px;
+        font-size: 32px;
         margin-bottom: 30px;
+        letter-spacing: 0.5px;
+    }
+    
+    .welcome-text {
+        font-size: 13px;
+        line-height: 2;
+        letter-spacing: 0.3px;
+    }
+}
+
+/* Extra small devices (phones in portrait, less than 400px) */
+@media (max-width: 400px) {
+    .main-brand {
+        font-size: 42px;
+        letter-spacing: 1.5px;
+    }
+    
+    .hero-tagline {
+        font-size: 18px;
+    }
+    
+    .welcome-title {
+        font-size: 28px;
     }
     
     .welcome-text {
