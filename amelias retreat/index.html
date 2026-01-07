@@ -3,25 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Amelia's Retreat - Luxury beauty massage spa studio offering rejuvenating treatments and wellness services">
-    <title>Amelia's Retreat | Luxury Spa & Wellness</title>
+    <title>Amelia's Retreat - Timeless Beauty. Modern Care.</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <span class="logo-main">Amelia's</span>
-                <span class="logo-sub">retreat</span>
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
+            <div class="menu-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -30,142 +27,39 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
+    <section class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Welcome to Amelia's Retreat</h1>
-            <p class="hero-subtitle">A sanctuary of relaxation and rejuvenation</p>
-            <a href="#contact" class="cta-button">Contact Us</a>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <p class="section-subtitle">Indulge in our luxurious treatments designed to restore your mind, body, and spirit</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/massage-nature.jpg" alt="picture">
-                    </div>
-                    <h3>Signature Massage</h3>
-                    <p>Experience our signature full-body massage using premium oils and techniques tailored to your needs.</p>
+            <p class="hero-tagline">Timeless Beauty. Modern Care.</p>
+            <div class="brand-name">
+                <span class="est">EST.</span>
+                <h1 class="main-brand">AMELIA</h1>
+                <span class="year">2025</span>
+            </div>
+            <div class="brand-icons">
+                <div class="icon-item">
+                    <span>AESTHETIC ENHANCEMENTS</span>
                 </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/facial-nature.jpg" alt="picture">
-                    </div>
-                    <h3>Facial Treatments</h3>
-                    <p>Rejuvenate your skin with our advanced facial treatments using natural, organic products.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/beauty-nature.jpg" alt="picture">
-                    </div>
-                    <h3>Beauty Services</h3>
-                    <p>Complete your look with our professional nail care, waxing, and beauty enhancement services.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/wellness-forest.jpg" alt="picture">
-                    </div>
-                    <h3>Wellness Packages</h3>
-                    <p>Treat yourself to our curated wellness packages combining multiple services for ultimate relaxation.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/aromatherapy-woods.jpg" alt="picture">
-                    </div>
-                    <h3>Aromatherapy</h3>
-                    <p>Enhance your experience with therapeutic essential oils that soothe the senses and promote healing.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="images/couples-nature.jpg" alt="picture">
-                    </div>
-                    <h3>Couples Retreat</h3>
-                    <p>Share the experience with our couples massage and spa packages designed for two.</p>
+                <div class="icon-item">
+                    <span>WELLNESS CARE</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">About Amelia's Retreat</h2>
-                    <p>Nestled in a serene environment, Amelia's Retreat is dedicated to providing you with an unparalleled spa experience. Our team of skilled therapists combines traditional techniques with modern wellness practices to deliver treatments that truly transform.</p>
-                    <p>We believe that self-care is not a luxury, but a necessity. Every visit to our studio is designed to be a journey of relaxation, healing, and renewal. From the moment you step through our doors, you'll be enveloped in tranquility and comfort.</p>
-                    <p>Whether you're seeking relief from daily stress, preparing for a special occasion, or simply treating yourself, we're here to provide the perfect sanctuary for your wellness journey.</p>
-                    <div class="features">
-                        <div class="feature">
-                            <strong>Expert Therapists</strong>
-                            <p>Certified and experienced professionals</p>
-                        </div>
-                        <div class="feature">
-                            <strong>Premium Products</strong>
-                            <p>Only the finest natural and organic ingredients</p>
-                        </div>
-                        <div class="feature">
-                            <strong>Customized Care</strong>
-                            <p>Every treatment tailored to your needs</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="welcome-container">
+            <h2 class="welcome-title">Welcome to Amelia's Retreat</h2>
+            <p class="welcome-text">
+                AT AMELIA'S RETREAT, WE BELIEVE IN ENHANCING YOUR NATURAL RADIANCE WITH THE LATEST IN AESTHETIC AND SKIN CARE TREATMENTS. OUR EXPERT TEAM IS DEDICATED TO PROVIDING PERSONALIZED SOLUTIONS THAT HELP YOU LOOK AND FEEL YOUR BEST.
+            </p>
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <p class="section-subtitle">We're here to help you relax and rejuvenate. Get in touch with us.</p>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Location</h3>
-                        <p>Visit us at our tranquil studio<br>Experience serenity in the heart of the city</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Hours</h3>
-                        <p>Monday - Friday: 9:00 AM - 8:00 PM<br>
-                        Saturday: 10:00 AM - 6:00 PM<br>
-                        Sunday: 11:00 AM - 5:00 PM</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Contact</h3>
-                        <p>Phone: (555) 123-4567<br>
-                        Email: hello@ameliasretreat.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-main">Amelia</span>
-                    <span class="logo-sub">retreats</span>
-                </div>
-                <p>&copy; 2024 Amelia's Retreat. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#services">Services</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
 
