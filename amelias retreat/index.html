@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Lora:wght@400;500;600&family=Allura&family=Parisienne&family=Tangerine:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-links">
-                <a href="#services">Services</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-tab="home">Home</button>
+                <button class="nav-tab" data-tab="services">Services</button>
+                <button class="nav-tab" data-tab="about">About</button>
+                <button class="nav-tab" data-tab="contact">Contact</button>
             </div>
             <div class="menu-toggle">
                 <span></span>
@@ -26,40 +27,172 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <p class="hero-tagline">Timeless Beauty. Modern Care.</p>
-            <div class="brand-name">
-                <span class="est">EST.</span>
-                <h1 class="main-brand">AMELIA</h1>
-                <span class="year">2025</span>
-            </div>
-            <div class="brand-icons">
-                <div class="icon-item">
-                    <span>AESTHETIC ENHANCEMENTS</span>
+    <!-- Tab Content Container -->
+    <div class="content-container">
+        <!-- Home Tab -->
+        <section class="tab-content active" id="home">
+            <div class="hero">
+                <div class="hero-content">
+                    <p class="hero-tagline">Timeless Beauty. Modern Care.</p>
+                    <div class="brand-name">
+                        <span class="est">EST.</span>
+                        <div class="brand-main-container">
+                            <h1 class="main-brand">Amelia's</h1>
+                            <span class="brand-retreat">Retreat</span>
+                        </div>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="brand-icons">
+                        <div class="icon-item">
+                            <span>Aesthetic Enhancements</span>
+                        </div>
+                        <div class="icon-item">
+                            <span>Wellness Care</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="icon-item">
-                    <span>WELLNESS CARE</span>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Welcome Section -->
-    <section class="welcome-section">
-        <div class="welcome-container">
-            <h2 class="welcome-title">Welcome to Amelia's Retreat</h2>
-            <p class="welcome-text">
-                AT AMELIA'S RETREAT, WE BELIEVE IN ENHANCING YOUR NATURAL RADIANCE WITH THE LATEST IN AESTHETIC AND SKIN CARE TREATMENTS. OUR EXPERT TEAM IS DEDICATED TO PROVIDING PERSONALIZED SOLUTIONS THAT HELP YOU LOOK AND FEEL YOUR BEST.
-            </p>
-        </div>
-    </section>
+        <!-- Services Tab -->
+        <section class="tab-content" id="services">
+            <div class="services-section">
+                <div class="section-header">
+                    <p class="section-subtitle">Our Offerings</p>
+                    <h2 class="section-title">Services</h2>
+                    <div class="title-divider"></div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-number">01</div>
+                        <h3 class="service-name">Facial Treatments</h3>
+                        <p class="service-description">Luxurious facials tailored to your skin's unique needs, using premium products and advanced techniques to restore your natural radiance.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">02</div>
+                        <h3 class="service-name">Aesthetic Procedures</h3>
+                        <p class="service-description">State-of-the-art aesthetic enhancements performed by certified professionals, ensuring natural-looking, beautiful results.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">03</div>
+                        <h3 class="service-name">Wellness Therapies</h3>
+                        <p class="service-description">Holistic wellness treatments designed to rejuvenate both body and mind, creating harmony from within.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">04</div>
+                        <h3 class="service-name">Skin Consultations</h3>
+                        <p class="service-description">Personalized skin analysis and expert guidance to help you achieve your skincare goals with a customized treatment plan.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">05</div>
+                        <h3 class="service-name">Body Treatments</h3>
+                        <p class="service-description">Indulgent body therapies that nourish, exfoliate, and restore, leaving your skin silky smooth and revitalized.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-number">06</div>
+                        <h3 class="service-name">Specialized Care</h3>
+                        <p class="service-description">Bespoke treatments addressing specific concerns, combining traditional wisdom with modern innovation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Tab -->
+        <section class="tab-content" id="about">
+            <div class="about-section">
+                <div class="about-content">
+                    <div class="section-header">
+                        <p class="section-subtitle">Our Story</p>
+                        <h2 class="section-title">About</h2>
+                        <div class="title-divider"></div>
+                    </div>
+                    <div class="about-text-container">
+                        <div class="about-column">
+                            <p class="about-intro">
+                                At Amelia's Retreat, we believe in enhancing your natural radiance with the latest in aesthetic and skin care treatments.
+                            </p>
+                            <p class="about-text">
+                                Our expert team is dedicated to providing personalized solutions that help you look and feel your best. With a commitment to excellence and a passion for beauty, we create an atmosphere of tranquility and sophistication where every detail matters.
+                            </p>
+                        </div>
+                        <div class="about-column">
+                            <p class="about-text">
+                                We combine time-honored techniques with cutting-edge technology, ensuring that each treatment is both effective and luxurious. Our philosophy centers on the belief that true beauty comes from within, and our treatments are designed to enhance your natural glow while promoting overall wellness.
+                            </p>
+                            <p class="about-text">
+                                Every visit to Amelia's Retreat is an experience in itself—a moment to pause, rejuvenate, and rediscover your most radiant self.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <h4 class="value-title">Excellence</h4>
+                            <p class="value-text">Uncompromising quality in every treatment</p>
+                        </div>
+                        <div class="value-item">
+                            <h4 class="value-title">Personalization</h4>
+                            <p class="value-text">Tailored solutions for your unique needs</p>
+                        </div>
+                        <div class="value-item">
+                            <h4 class="value-title">Innovation</h4>
+                            <p class="value-text">The latest techniques and technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Tab -->
+        <section class="tab-content" id="contact">
+            <div class="contact-section">
+                <div class="section-header">
+                    <p class="section-subtitle">Get In Touch</p>
+                    <h2 class="section-title">Contact</h2>
+                    <div class="title-divider"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h4 class="contact-label">Location</h4>
+                            <p class="contact-detail">Visit us at our serene retreat</p>
+                            <p class="contact-value">By appointment only</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4 class="contact-label">Phone</h4>
+                            <p class="contact-detail">Speak with our team</p>
+                            <p class="contact-value">+1 (555) 123-4567</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4 class="contact-label">Email</h4>
+                            <p class="contact-detail">Send us a message</p>
+                            <p class="contact-value">hello@ameliasretreat.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4 class="contact-label">Hours</h4>
+                            <p class="contact-detail">We're here for you</p>
+                            <p class="contact-value">Tuesday - Saturday<br>10:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
